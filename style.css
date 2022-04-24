@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap");
+
+body {
+  background-color: #005555;
+  margin: 0px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  /* background-color: #a1e3d8; */
+  background-color: #069a8e;
+}
+
+.logo {
+  width: 80px;
+  float: left;
+  margin: 10px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 21px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #005555;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
